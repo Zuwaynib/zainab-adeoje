@@ -6,7 +6,7 @@
     --grey: rgb(156, 152, 152);
     --dark-grey: rgb(39, 38, 38);
     --black: #050305;
-    --lighter-black: #2c2c2c;
+    --lighter-black: #131212;
     --green: #00c9ff;
     --deeper-green: #088baf;
 }
@@ -14,4 +14,31 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    background: var(--black);
+    color: var(--white);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: var(--lighter-black);
+}
+.header h1 span {
+    color: var(--green);
+    margin-left: 8px;
+}
+h1 span:hover {
+    color: var(--deeper-green);
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.nav-list li {
+    font-size: 18px;
+
 }
