@@ -40,5 +40,27 @@ h1 span:hover {
 }
 .nav-list li {
     font-size: 18px;
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.4s ease;
+}
+.navbar a:hover {
+    background: var(--green);
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: var(--black);
+}
+.dark-mode i {
+    background: transparent;
+    font-size: 30px;
+    padding: 10px;
+}
 
+/* Media query for responsiveness across screen sizes*/
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 18px;
+    }
 }
