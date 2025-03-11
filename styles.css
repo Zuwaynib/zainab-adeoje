@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 :root {
     --white: #f5f6f7;
-    --lighter-white: #f5f6f7;
+    --lighter-white: #fff;
     --light-grey: rgb(243, 229, 229);
     --grey: rgb(156, 152, 152);
     --dark-grey: rgb(39, 38, 38);
@@ -16,6 +16,17 @@ body {
     font-family: "Poppins", sans-serif;
     background: var(--black);
     color: var(--white);
+}
+body.dark {
+    --white: #050305;
+    --lighter-white: #131212;
+    --light-grey: rgb(39, 38, 38);
+    --grey: rgb(156, 152, 152);
+    --dark-grey: rgb(243, 229, 229);
+    --black: #f5f6f7;
+    --lighter-black: #fff;
+    --green: #088baf;
+    --deeper-green: #00c9ff;
 }
 .header {
     display: flex;
@@ -52,11 +63,25 @@ h1 span:hover {
     border-radius: 10px;
     color: var(--black);
 }
-.dark-mode i {
+/* .dark-mode i {
     background: transparent;
     font-size: 30px;
     padding: 10px;
-}
+} */
+ .dark-mode {
+    padding: 15px 25px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+ }
+ .dark-mode:hover {
+    background: var(--white);
+    color: var(--black);
+ }
 
 /* Media query for responsiveness across screen sizes*/
 @media (max-width: 768px) {
