@@ -1,13 +1,15 @@
-// const toggleButton = document.querySelector('.dark-mode');
-// const icon = toggleButton.querySelector('i');
+const darkMode = document.querySelector(".dark-mode");
 
-// toggleButton.addEventListener('click', () => {
-//     document.body.classList.toggle('dark-mode');
-    
-//     if (document.body.classList.contains('dark-mode')) {
-//         icon.classList.replace('fa-sun', 'fa-moon'); // Change to moon icon
-//     } else {
-//         icon.classList.replace('fa-moon', 'fa-sun'); // Change back to sun icon
-//     }
-// });
-let darkMode = document.querySelector(".dark-mode");
+if (darkMode) {  
+    if (localStorage.getItem("mode") === "Dark Mode") {
+        document.body.classList.add("dark");
+        darkMode.textContent = "Light Mode";
+    }
+
+    darkMode.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        const isDarkMode = document.body.classList.contains("dark");
+        darkMode.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+        localStorage.setItem("mode", isDarkMode ? "Dark Mode" : "Light Mode");
+    });
+}
