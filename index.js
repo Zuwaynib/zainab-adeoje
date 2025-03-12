@@ -1,5 +1,6 @@
 const darkMode = document.querySelector(".dark-mode");
 
+// Toggle between light and dark modes
 if (darkMode) {  
     if (localStorage.getItem("mode") === "Dark Mode") {
         document.body.classList.add("dark");
