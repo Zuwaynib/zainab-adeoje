@@ -16,6 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
     background: var(--black);
     color: var(--white);
+    font-size: 18px;
 }
 body.dark {
     --white: #050305;
@@ -82,6 +83,51 @@ h1 span:hover {
     background: var(--white);
     color: var(--black);
  }
+
+/* About section styles */
+#about {
+    padding: 1rem 1rem 10rem 1rem;
+    margin: 0 30px;
+    /* max-width: 1200px; */
+}
+#about .name {
+    font-size: 18px;
+}
+.name span {
+    color: var(--light-grey);
+    font-size: 2rem;
+}
+#about .tech {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tech ul {
+    list-style: none;
+    display: flex;
+}
+.tech ul li {
+    margin: 0 10px 0 0;
+    background: var(--green);
+    color: var(--black);
+    padding: 10px 20px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+.tech ul li:hover {
+    background: var(--deeper-green);
+    border-radius: 10px;
+}
+#about .hire {
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    background: var(--green);
+    font-size: 22px;
+    border-radius: 15px;
+    margin: 0 50px;
+}
 
 /* Media query for responsiveness across screen sizes*/
 @media (max-width: 768px) {
